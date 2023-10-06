@@ -1,0 +1,60 @@
+.form{
+    width: 50vw;
+    margin: auto;
+    margin-top: 100px;
+}
+.form h1{
+    text-align: center;
+    font-size: 20px;
+}
+
+.form input[type=text], .form input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .form input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .form input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .Login,.Register {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  .Register button{
+    color: rgb(86, 86, 234);
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+  .Register button:hover{
+    color: blue;
+  }
+
+  .Login button{
+    color: rgb(86, 86, 234);
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+  .Login button:hover{
+    color: blue;
+  }

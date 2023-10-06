@@ -1,0 +1,69 @@
+/* .navigation
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1C2833;
+    color: white;
+    height: 8vh;
+    max-width: 100vw;
+}
+
+.navigation h1{
+    font-size: 19px;
+} */
+.navigation
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #080e28;
+    /* background:linear-gradient( #080e28);  */
+    height: 8vh;
+    width: 100vw;
+}
+.navigation h1{
+    font-size: 19px;
+}
+  /* Steam effect animation */
+@keyframes steamAnimation {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    50% {
+      transform: translateX(50%);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-250%);
+      opacity: 0;
+    }
+  }
+  
+  .navigation {
+    position: relative;
+  }
+  
+  .navigation h1::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, #FFFFFF 5%, transparent 50%);
+    top: 0;
+    left: 100%;
+    animation: steamAnimation 3s linear infinite;
+  }
+  
+  .navigation h1 {
+    font-size: 2rem; /* Adjust font size as needed */
+    background: linear-gradient(45deg, #ff00ff, #00ffff, #ff00ff); /* Adjust colors as needed */
+    background-size: 200% 100%;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    display: inline-block;
+    position: relative;
+  }
+  
